@@ -7,7 +7,7 @@ import java.util.List;
 public interface IUser {
     void addUser(Users user);
 
-    Users getUser(String username);
+    Users getUser(String username, String password);
 
     void updateUser(Users user);
 

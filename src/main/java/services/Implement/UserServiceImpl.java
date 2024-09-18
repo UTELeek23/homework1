@@ -6,9 +6,13 @@ import services.Interface.UserService;
 
 public class UserServiceImpl implements UserService {
     @Override
-    public boolean login(String username, String password) {
+    public Users login(String username, String password) {
         UserImp userImp = new UserImp();
-        userImp.getUser(username, password);
-        return userImp.getUser(username, password) != null;
+        Users user = new Users();
+        user = userImp.getUser(username, password);
+        if (user != null) {
+            return user;
+        }
+        return null;
     }
 }

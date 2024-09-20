@@ -31,7 +31,9 @@
   <!--===============================================================================================-->
 </head>
 <body>
-
+<c:if test="${alert !=null}">
+  <h3 class="alert alert-danger">${alert}</h3>
+</c:if>
 <div class="limiter">
   <div class="container-login100">
     <div class="wrap-login100">
@@ -69,13 +71,13 @@
 						<span class="txt1">
 							Forgot
 						</span>
-          <a class="txt2" href="#">
+          <a class="txt2" href="/homework1_war_exploded/forget">
             Username / Password?
           </a>
         </div>
 
         <div class="text-center p-t-136">
-          <a class="txt2" href="#">
+          <a class="txt2" href="/homework1_war_exploded/register">
             Create your Account
             <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
           </a>

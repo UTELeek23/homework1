@@ -9,7 +9,8 @@ public interface IUser {
 
     Users getUser(String username, String password);
 
-    void updateUser(Users user);
-
+    Users updateUser(Users user);
+//    void updatePassword(String oldPassword, String newPassword);
     void deleteUser(String username);
+    Users getUserByUsername(String username);
 }
